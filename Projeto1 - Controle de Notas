@@ -14,7 +14,7 @@
 //7) quantidade de alunos reprovados.
 //Para desenvolver e criar o projeto, deverá usar o HTML para demonstrar e obter o resultado, CSS para estilizar a demonstração feita no HTML e JavaScript para as funcionalidades.
 
-# arquivo: index.html #
+########## arquivo: index.html ##################
  
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -59,7 +59,7 @@ body {
     color: blue;
   }
 
-# arquivo: script.js #
+################# arquivo: script.js ###################
 
 // Lista de alunos
 const alunos = [
