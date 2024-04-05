@@ -1,4 +1,4 @@
-// Codigo finalizado e executando de forma correta e na condição esperada
+// Função finalizada e sendo executanda de forma correta e na condição esperada
 function obterConteudosDosObjetivos() {
     // Obtém todos os elementos com a classe "tab-grid-content-header"
     var materias = document.querySelectorAll('.tab-grid-content-header');
@@ -30,8 +30,8 @@ function obterConteudosDosObjetivos() {
 }
 
 // Para executar corretamente o programa o usuário deve acessar o site pelo Chrome.
-// Site objeto da filtragem: https://fatecrl.edu.br/cursos/sistemas-para-internet/grades
-// Abra, na aba lateral, a ferramentas do desenvolvedor e selecionar a opção console;
-// Cópie e cole o programa acima e o eecute;
-// Após basta chamar a função criada para que a filtragem ocorra.
+// Acesse o SITE objeto da filtragem: https://fatecrl.edu.br/cursos/sistemas-para-internet/grades
+// Abra, na aba lateral do Chrome, a opção de "ferramentas do desenvolvedor" e selecione a opção "console";
+// Cópie e cole o programa acima e o execute apertando o ENTER;
+// Após basta chamar a função criada "obterConteudosDosObjetivos()" para que a filtragem ocorra e apresente todos os resultados.
 
