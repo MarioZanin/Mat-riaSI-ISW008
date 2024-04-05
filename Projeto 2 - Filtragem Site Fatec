@@ -1,0 +1,37 @@
+// Codigo finalizado e executando de forma correta e na condição esperada
+function obterConteudosDosObjetivos() {
+    // Obtém todos os elementos com a classe "tab-grid-content-header"
+    var materias = document.querySelectorAll('.tab-grid-content-header');
+    // Obtém todos os elementos com a classe "tab-subtitle"
+    var titulos = document.querySelectorAll('.tab-subtitle');
+    // Contador para controlar a sequência das matérias para que as matérias sejam apresentadas na
+    //seguência que se apresentam na página existente na internet.
+    var contadorMaterias = 0;
+    // Itera sobre os títulos para obter os conteúdos dos objetivos correspondentes
+    titulos.forEach(function(titulo, index) {
+        // Verifica se o texto do título é "Objetivo:"
+        if (titulo.textContent.trim() === 'Objetivo:') {
+            // Obtém o próximo elemento irmão após o título
+            var conteudo = titulo.nextElementSibling;
+            // Verifica se o próximo elemento irmão é um parágrafo com a classe "tab-text"
+            if (conteudo && conteudo.tagName === 'P' && conteudo.classList.contains('tab-text')) {
+                // Imprime o nome da matéria com base no contador
+                if (materias.length > 0 && materias[contadorMaterias]) {
+                    var materia = materias[contadorMaterias].textContent.trim();
+                    console.log('Matéria:', materia);
+                }
+                // Imprime a expressão "OBJETIVO:" antes do conteúdo do objetivo
+                console.log('OBJETIVO:', conteudo.textContent.trim());
+                // Incrementa o contador de matérias
+                contadorMaterias++;
+            }
+        }
+    });
+}
+
+// Para executar corretamente o programa o usuário deve acessar o site pelo Chrome.
+// Site objeto da filtragem: https://fatecrl.edu.br/cursos/sistemas-para-internet/grades
+// Abra, na aba lateral, a ferramentas do desenvolvedor e selecionar a opção console;
+// Cópie e cole o programa acima e o eecute;
+// Após basta chamar a função criada para que a filtragem ocorra.
+
